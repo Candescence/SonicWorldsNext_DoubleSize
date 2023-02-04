@@ -1,7 +1,7 @@
 extends Node2D
 
 export var music = preload("res://Audio/Soundtrack/6. SWD_TLZa1.ogg")
-export (PackedScene) var nextZone = load("res://Scene/Zones/BaseZone.tscn")
+export (PackedScene) var nextZone = load("res://Scene/Zones/DoubleZone.tscn")
 
 export (int, "Bird", "Squirrel", "Rabbit", "Chicken", "Penguin", "Seal", "Pig", "Eagle", "Mouse", "Monkey", "Turtle", "Bear")var animal1 = 0
 export (int, "Bird", "Squirrel", "Rabbit", "Chicken", "Penguin", "Seal", "Pig", "Eagle", "Mouse", "Monkey", "Turtle", "Bear")var animal2 = 1

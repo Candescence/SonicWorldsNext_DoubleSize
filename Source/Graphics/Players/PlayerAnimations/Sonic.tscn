@@ -675,6 +675,7 @@ anims/walk = SubResource( 85 )
 
 [node name="Sprite" type="Sprite" parent="."]
 material = ExtResource( 1 )
+scale = Vector2( 2, 2 )
 z_index = 5
 texture = ExtResource( 2 )
 offset = Vector2( 0, -4 )
@@ -684,7 +685,7 @@ vframes = 16
 [node name="DashDust" type="AnimatedSprite" parent="Sprite"]
 visible = false
 frames = SubResource( 96 )
-frame = 4
+frame = 5
 playing = true
 offset = Vector2( -9, -4 )
 

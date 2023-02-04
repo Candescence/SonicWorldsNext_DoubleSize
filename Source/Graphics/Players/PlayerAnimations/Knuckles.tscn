@@ -671,6 +671,7 @@ next/edge1 = "edge2"
 
 [node name="Sprite" type="Sprite" parent="."]
 material = ExtResource( 1 )
+scale = Vector2( 2, 2 )
 z_index = 5
 texture = ExtResource( 2 )
 offset = Vector2( 0, -8 )
@@ -681,7 +682,6 @@ frame = 76
 [node name="DashDust" type="AnimatedSprite" parent="Sprite"]
 visible = false
 frames = SubResource( 96 )
-frame = 3
 playing = true
 offset = Vector2( -9, -4 )
 

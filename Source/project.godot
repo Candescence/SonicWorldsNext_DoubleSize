@@ -60,8 +60,8 @@ shapes/collision/shape_color=Color( 1, 1, 1, 0.501961 )
 
 [display]
 
-window/size/width=320
-window/size/height=224
+window/size/width=640
+window/size/height=360
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 

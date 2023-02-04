@@ -1,8 +1,11 @@
 extends PhysicsObject
-const HITBOXESSONIC = {NORMAL = Vector2(9,19), ROLL = Vector2(7,14), CROUCH = Vector2(9,11), GLIDE = Vector2(10,10)}
-const HITBOXESTAILS = {NORMAL = Vector2(9,15), ROLL = Vector2(7,14), CROUCH = Vector2(9,9.5), GLIDE = Vector2(10,10)}
-const HITBOXESKNUCKLES = {NORMAL = Vector2(9,19), ROLL = Vector2(7,14), CROUCH = Vector2(9,11), GLIDE = Vector2(10,10)}
+const HITBOXESSONIC = {NORMAL = Vector2(18,38), ROLL = Vector2(14,28), CROUCH = Vector2(18,22), GLIDE = Vector2(20,20)}
+const HITBOXESTAILS = {NORMAL = Vector2(18,30), ROLL = Vector2(14,28), CROUCH = Vector2(18,19), GLIDE = Vector2(20,20)}
+const HITBOXESKNUCKLES = {NORMAL = Vector2(18,38), ROLL = Vector2(14,28), CROUCH = Vector2(18,22), GLIDE = Vector2(20,20)}
 var currentHitbox = HITBOXESSONIC
+
+#const HITBOXESSONIC = {NORMAL = Vector2(9,19), ROLL = Vector2(7,14), CROUCH = Vector2(9,11), GLIDE = Vector2(10,10)}
+#const HITBOXESSONIC = {NORMAL = Vector2(18,38), ROLL = Vector2(14,28), CROUCH = Vector2(18,22), GLIDE = Vector2(20,20)}
 
 #Sonic's Speed constants
 var acc = 0.046875			#acceleration
@@ -64,11 +67,11 @@ var character = CHARACTERS.SONIC
 
 var physicsList = [
 # 0 Sonic
-[0.046875, 0.5, 0.046875, 6*60, 0.09375, 0.046875*0.5, 0.125, 0.21875, 6.5*60, 4],
+[0.066875, 0.5, 0.066875, 6*60, 0.09375, 0.046875*0.5, 0.125, 0.21875, 9*60, 4],
 # 1 Tails
-[0.046875, 0.5, 0.046875, 6*60, 0.09375, 0.046875*0.5, 0.125, 0.21875, 6.5*60, 4],
+[0.066875, 0.5, 0.066875, 6*60, 0.09375, 0.046875*0.5, 0.125, 0.21875, 9*60, 4],
 # 2 Knuckles
-[0.046875, 0.5, 0.046875, 6*60, 0.09375, 0.046875*0.5, 0.125, 0.21875, 6*60, 4],
+[0.066875, 0.5, 0.066875, 6*60, 0.09375, 0.046875*0.5, 0.125, 0.21875, 8.5*60, 4],
 # 3 Shoes (remove *0.5 for original rolling friction)
 [0.09375, 0.5, 0.09375, 12*60, 0.1875, 0.046875*0.5, 0.125, 0.21875, 6.5*60, 4],
 # 4 Super Sonic
@@ -80,6 +83,9 @@ var physicsList = [
 # 7 Shoes Knuckles (small jump) (remove *0.5 for original rolling friction)
 [0.09375, 0.5, 0.09375, 12*60, 0.1875, 0.046875*0.5, 0.125, 0.21875, 6*60, 4],
 ]
+
+#[0.046875, 0.5, 0.046875, 6*60, 0.09375, 0.046875*0.5, 0.125, 0.21875, 6.5*60, 4],
+#[0.046875, 0.5, 0.046875, 6*60, 0.09375, 0.046875*0.5, 0.125, 0.21875, 9.5*60, 4],
 
 var waterPhysicsList = [
 # 0 Sonic
