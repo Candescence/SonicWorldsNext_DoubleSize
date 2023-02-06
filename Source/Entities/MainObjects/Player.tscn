@@ -65,7 +65,7 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 resource_local_to_scene = true
-extents = Vector2( 9, 19 )
+extents = Vector2( 18, 38 )
 
 [sub_resource type="CanvasItemMaterial" id=2]
 blend_mode = 5
@@ -779,12 +779,14 @@ z_index = 7
 position = Vector2( 0, -16 )
 frames = SubResource( 157 )
 animation = "Invincibility"
+frame = 3
 playing = true
 
 [node name="StarGenerator2" type="AnimatedSprite" parent="InvincibilityBarrier"]
 position = Vector2( 0, 16 )
 frames = SubResource( 157 )
 animation = "Invincibility"
+frame = 3
 playing = true
 
 [node name="SFX" type="Node" parent="."]

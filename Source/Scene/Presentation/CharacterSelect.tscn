@@ -7,7 +7,7 @@
 [ext_resource path="res://Scripts/Level/CharacterSelect.gd" type="Script" id=5]
 [ext_resource path="res://Scripts/Misc/TextDisplay.gd" type="Script" id=6]
 [ext_resource path="res://Graphics/Players/Knuckles.png" type="Texture" id=7]
-[ext_resource path="res://Scene/Zones/BaseZone.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scene/Zones/DoubleZone.tscn" type="PackedScene" id=8]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Animate"
