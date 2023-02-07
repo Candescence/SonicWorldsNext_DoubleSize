@@ -18,7 +18,7 @@ var maxCharGroundHeight = 16 # this is to stop players getting stuck at the bott
 var yGroundDiff = 0 # used for y differences on ground sensors
 
 
-var groundLookDistance = 14 # how far down to look
+var groundLookDistance = 14*2 # how far down to look
 onready var pushRadius = max($HitBox.shape.extents.x+1,10) # original push radius is 10
 
 
@@ -89,7 +89,7 @@ func update_sensors():
 	
 	# calculate how far down to look if on the floor, the sensor extends more if the objects is moving, if the objects moving up then it's ignored,
 	# if you want behaviour similar to sonic 1, replace "min(abs(movement.x/60)+4,groundLookDistance)" with "groundLookDistance"
-	var extendFloorLook = min(abs(movement.x/60)+4,groundLookDistance)*(int(movement.y >= 0)*int(ground))
+	var extendFloorLook = min(abs(movement.x/60)+8,groundLookDistance)*(int(movement.y >= 0)*int(ground))
 	
 	verticalSensorLeft.cast_to.y = ((shape.y+extendFloorLook)*(int(movement.y >= 0)-int(movement.y < 0)))+yGroundDiff
 	

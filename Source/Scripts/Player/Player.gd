@@ -1,11 +1,13 @@
 extends PhysicsObject
-const HITBOXESSONIC = {NORMAL = Vector2(18,38), ROLL = Vector2(14,28), CROUCH = Vector2(18,22), GLIDE = Vector2(20,20)}
-const HITBOXESTAILS = {NORMAL = Vector2(18,30), ROLL = Vector2(14,28), CROUCH = Vector2(18,19), GLIDE = Vector2(20,20)}
-const HITBOXESKNUCKLES = {NORMAL = Vector2(18,38), ROLL = Vector2(14,28), CROUCH = Vector2(18,22), GLIDE = Vector2(20,20)}
+const HITBOXESSONIC = {NORMAL = Vector2(18,39), ROLL = Vector2(14,28), CROUCH = Vector2(18,31), GLIDE = Vector2(20,20)}
+const HITBOXESTAILS = {NORMAL = Vector2(18,35), ROLL = Vector2(14,26), CROUCH = Vector2(18,29), GLIDE = Vector2(20,20)}
+const HITBOXESKNUCKLES = {NORMAL = Vector2(18,38), ROLL = Vector2(14,28), CROUCH = Vector2(18,30), GLIDE = Vector2(20,20)}
 var currentHitbox = HITBOXESSONIC
 
 #const HITBOXESSONIC = {NORMAL = Vector2(9,19), ROLL = Vector2(7,14), CROUCH = Vector2(9,11), GLIDE = Vector2(10,10)}
-#const HITBOXESSONIC = {NORMAL = Vector2(18,38), ROLL = Vector2(14,28), CROUCH = Vector2(18,22), GLIDE = Vector2(20,20)}
+#const HITBOXESSONIC = {NORMAL = Vector2(18,38), ROLL = Vector2(14,28), CROUCH = Vector2(18,30), GLIDE = Vector2(20,20)}
+#const HITBOXESTAILS = {NORMAL = Vector2(18,30), ROLL = Vector2(14,28), CROUCH = Vector2(18,30), GLIDE = Vector2(20,20)}
+#const HITBOXESKNUCKLES = {NORMAL = Vector2(18,38), ROLL = Vector2(14,28), CROUCH = Vector2(18,30), GLIDE = Vector2(20,20)}
 
 #Sonic's Speed constants
 var acc = 0.046875			#acceleration
